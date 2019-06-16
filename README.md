@@ -8,7 +8,7 @@ Vous trouverez ici les imprim-écrans des différentes étapes à suivre pour in
 
 <a href="https://docs.google.com/presentation/d/e/2PACX-1vRQPuy_5olP8j4p9P2KbDMsO_igLcq2mOWLcCuHNX7YECwDOi7e0WnyA1XM-8E1sDXk9dHxTcGE9E2g/pub?start=false&loop=false&delayms=3000" target="_blanck">Mailchimp demo</a>
 
-Une fois le code d'intégration récupérer, il doit être collé là où l'on souhaite voir apparaitre le formulaire. On remarque que le code récupérér contient 3 parties : un lien vers une page de CSS (balise "link"), le formulaire et des du JS (balises "script). Par souci de clartée nous avons séparré ces trois bouts de codes:
+Une fois le code d'intégration récupérer, il doit être collé là où l'on souhaite voir apparaitre le formulaire. On remarque que le code récupérér contient 3 parties : un lien vers une page de CSS (balise "link"), le formulaire et du JS (balises "script). Par souci de clartée nous avons séparré ces trois bouts de codes:
 
 ### Le lien vers la page CSS (balise "link") (l.8)
 Les links se mettent toujours dans le head avant le link vers sa propre page de stye (style.css)
@@ -81,3 +81,30 @@ Le javascript se met toujours à la fin avant </body>
 Vous trouverez ici les imprim-écrans des différentes étapes à suivre pour intégrer un formulaire <a href="https://www.typeform.com/" target="_blanck">TypeForm</a> :
 
 <a href="https://docs.google.com/presentation/d/e/2PACX-1vRUaC-lrvdei4Qb1gCEdE6kIRB677I-Nys0QlpK-JlUUTRT4WijsrSXz4p__PNqAY0_OuVoWA6cCWwy/pub?start=false&loop=false&delayms=60000" target="_blanck">TypeForm Demo</a>
+
+Une fois le code d'intégration récupérer, il doit être collé là où l'on souhaite voir apparaitre le formulaire. On remarque que le code récupérér contient 2 parties : le bouton (dans une balise "a") et du JS (balise "script). Par souci de clartée nous avons séparré ces deux bouts de codes:
+
+### Le bouton (l.219)
+Pour que le bouton est le même aspect que les autres boutons du site, nous avons effacé l'attribut "style" et ajouté la classe "btn-pink".
+
+```html
+<a class="typeform-share button btn-pink" href="https://jonathanserafini.typeform.com/to/vUV9EH" data-mode="popup" target="_blank">Commender ici</a>
+```
+
+### Le JS (l.255-266)
+Le javascript se met toujours à la fin avant </body>
+```html
+  <script>
+    (function() {
+      var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/";
+      if(!gi.call(d,id)){
+        js=ce.call(d,"script");
+        js.id=id;
+        js.src=b+"embed.js";
+        q=gt.call(d,"script")[0];
+        q.parentNode.insertBefore(js,q)
+      }
+    })()
+  </script>
+```
+
