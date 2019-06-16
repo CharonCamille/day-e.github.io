@@ -107,4 +107,47 @@ Le javascript se met toujours à la fin avant </body>
     })()
   </script>
 ```
+## <a href="https://uikit.lewagon.com/" target="_blanck">Le wagon Ui components</a>
+
+<a href="https://uikit.lewagon.com/" target="_blanck">Le wagon Ui components</a> est une bibliothèque de composents HTML/CSS mise à disposition par <a href="https://www.lewagon.com/" target="_blanck">Le wagon</a>. 
+
+Il suffit de choisir un composant, de copier le HTML dans index.html puis le CSS dans style.css et de modifier le composant pour qu'il s'accorde avec le reste du site. Dans notre exemple nous allons remplacer le 1er cadre par une <a href="https://uikit.lewagon.com/documentation#banner" target="_blanck">bannière</a>
+
+### Le HTML (l.66-74)
+```html
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(images/banner.jpg);">
+    <div class="container">
+      <h1 class="color-green">Les Muffins de Grand Mère</h1>
+      <h2 class="color-green">Fondants et croustillants</h2>
+      <img src="images/muffin.jpg" alt="muffin" class="avatar">
+      <br>
+      <a href="https://www.marmiton.org/recettes/recette_muffins-tres-simples_166385.aspx" target="_blanck" class="btn-pink">En savoir plus</a>
+    </div>
+  </div>
+```
+### CSS (l.166-186)
+```css
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+```
+
+Nous avons légèrement changé le css et l'image de fond pour que cela corresponde plus a notre site.
 
