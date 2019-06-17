@@ -1,5 +1,7 @@
 # Jour 5
 
+## <a href="https://joz84.github.io/day-e.github.io/" target="_blanck">Demo</a>
+
 ## <a href="https://mailchimp.com/" target="_blanck">MailChimp</a>
 
 <a href="https://mailchimp.com/" target="_blanck">MailChimp</a> est un service en ligne qui permet de gérer des envoies de mails groupés. Il faut créer un "audience" (liste de mails destinataire de la future newsletter), un "template" (email type contenant la newletter) et enfin une "campagne" qui est l'action d'envoyer un template à une audience. 
