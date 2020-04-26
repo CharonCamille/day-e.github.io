@@ -1,6 +1,6 @@
 # Jour 5
 
-## <a href="https://joz84.github.io/day-e.github.io/" target="_blanck">Demo</a>
+## Lien vers la <a href="https://joz84.github.io/day-e.github.io/" target="_blanck">demo</a>
 
 ## <a href="https://mailchimp.com/" target="_blanck">MailChimp</a>
 
